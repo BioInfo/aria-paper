@@ -7,6 +7,7 @@ type: software
 authors:
   - given-names: Justin H.
     family-names: Johnson
+    orcid: "https://orcid.org/0000-0001-7248-7784"
   - given-names: Nicholas
     family-names: Bedworth
 abstract: >-
