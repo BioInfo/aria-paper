@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.eggs/
+build/
+dist/
+*.egg
+
+# Environments
+.venv/
+venv/
+env/
+.python-version
+uv.lock
+
+# Editors
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Test + coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Local-only
+*.local.yaml
+*.local.json
+*.local.md
+local_data/
+scratch/
+.private/
+
+# Generated
+*.log
+*.tmp
+
+# Notebooks
+.ipynb_checkpoints/

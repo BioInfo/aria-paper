@@ -1,0 +1,69 @@
+{
+  "single_platform_mccv": {
+    "n_shuffles": 20,
+    "mean_r": 0.7709,
+    "sd_r": 0.0378,
+    "ci95_from_se": [
+      0.7543,
+      0.7875
+    ],
+    "per_shuffle_range": [
+      0.7033,
+      0.8398
+    ],
+    "n_unique_subjects_pooled": 2120
+  },
+  "cross_platform_union_paired": {
+    "n_paired_subjects": 309,
+    "icare_r": 0.6049,
+    "icare_ci95_paired_bootstrap": [
+      0.5353,
+      0.6681
+    ],
+    "topcon_r": 0.5993,
+    "topcon_ci95_paired_bootstrap": [
+      0.5192,
+      0.6738
+    ],
+    "optomed_r": 0.5896,
+    "optomed_ci95_paired_bootstrap": [
+      0.5174,
+      0.6547
+    ],
+    "cross_platform_mean_r": 0.5944,
+    "cross_platform_mean_ci95_paired_bootstrap": [
+      0.5237,
+      0.66
+    ],
+    "icare_minus_cross_mean_diff": 0.0104,
+    "icare_minus_cross_mean_diff_ci95_paired_bootstrap": [
+      -0.0377,
+      0.0607
+    ]
+  },
+  "steiger_z_paired_within_cross_platform": {
+    "icare_vs_topcon": {
+      "z": 0.1854,
+      "p": 0.8529,
+      "r_pred_correlation": 0.7704
+    },
+    "icare_vs_optomed": {
+      "z": 0.5583,
+      "p": 0.5767,
+      "r_pred_correlation": 0.8105
+    }
+  },
+  "fisher_z_between_single_and_cross_platform": {
+    "z": 5.5277,
+    "p": 3e-08,
+    "n_single_platform": 2120,
+    "n_cross_platform": 309
+  },
+  "method_notes": [
+    "Single-platform: 20-shuffle MCCV, ConvNeXt-Tiny 1024px on AI-READI v3.0 Eidon CFP.",
+    "Cross-platform: union-trained ConvNeXt-Tiny evaluated on 309 paired subjects across iCare Eidon, Topcon Triton, Optomed Aurora.",
+    "Paired bootstrap: subject-level resampling with replacement, 10,000 iterations, seed 20260516.",
+    "Steiger Z-test: tests difference between two correlations sharing one variable (here: age target). Two paired correlations evaluated on the same 309 subjects.",
+    "Fisher z-test: tests difference between two independent correlations (different cohorts)."
+  ]
+}

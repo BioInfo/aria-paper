@@ -1,0 +1,147 @@
+{
+  "headline": {
+    "instances_deployed": 7,
+    "total_commits_all_instances": 19364,
+    "total_autonomous_sessions_approx": 17800,
+    "total_share_ipc_artifacts_aria_se_hub": 1028,
+    "first_commit": "2025-12-26",
+    "last_commit": "2026-04-29",
+    "active_span_weeks": 18,
+    "scientific_domains": 4,
+    "cloud_total_spend_usd": 86.92,
+    "cloud_total_dispatches": 900,
+    "cloud_completions": 147,
+    "cloud_completion_rate": 0.163
+  },
+  "per_instance": [
+    {
+      "id": "aria",
+      "role": "Original general / AI research",
+      "commits": 2467,
+      "first": "2025-12-26",
+      "last": "2026-02-13",
+      "active_days": 50,
+      "llm_stack": "GLM workers + Claude"
+    },
+    {
+      "id": "aria-se",
+      "role": "Vision / medical imaging (SocialEyes partnership)",
+      "commits": 10557,
+      "first": "2026-02-06",
+      "last": "2026-03-28",
+      "active_days": 50,
+      "llm_stack": "Kimi K2 primary + MiniMax M2.5 failover"
+    },
+    {
+      "id": "enterprise_pharma_deployment_A",
+      "role": "Enterprise pharma deployment A (R&D centre-of-excellence context)",
+      "commits": 3294,
+      "first": "2026-03-28",
+      "last": "2026-04-20",
+      "active_days": 23,
+      "llm_stack": "Codex-5.4 + Kimi K2 + MiniMax M2.7 (3-tier failover)"
+    },
+    {
+      "id": "enterprise_pharma_deployment_B",
+      "role": "Enterprise pharma deployment B (oncology R&D context)",
+      "commits": 2988,
+      "first": "2026-04-02",
+      "last": "2026-04-20",
+      "active_days": 18,
+      "llm_stack": "Multi-provider with quota-failover (1641 sessions on tertiary after primary exhausted)"
+    },
+    {
+      "id": "aria-red",
+      "role": "Adversarial critic (closed-loop into aria-se)",
+      "commits": 11,
+      "first": "2026-02-19",
+      "last": "2026-02-23",
+      "active_days_code": 4,
+      "active_days_runtime": 50,
+      "llm_stack": "GLM-5 (deliberately not the same family as the producer)",
+      "artifacts_emitted": 234
+    },
+    {
+      "id": "aria-pub",
+      "role": "Publication / manuscript drafting + feedback loop",
+      "commits": 5,
+      "first": "2026-02-21",
+      "last": "2026-02-23",
+      "active_days_code": 2,
+      "active_days_runtime": 50,
+      "llm_stack": "Tier-routed GLM-5 -> Sonnet -> Opus",
+      "artifacts_emitted": 361
+    },
+    {
+      "id": "aria-forge",
+      "role": "Training / synthesis extension",
+      "commits": 41,
+      "first": "2026-04-27",
+      "last": "2026-04-29",
+      "active_days": 3,
+      "llm_stack": "Claude (Sonnet/Opus mix)"
+    }
+  ],
+  "pool_sizes": {
+    "aria": {"total_files": 1053, "active_at_snapshot": 380, "notes": "+ 533 corpus insights, 821 session logs"},
+    "aria-se": {"total_files": 876, "active_at_snapshot": 74, "notes": "+ 116 local experiments, 900 cloud dispatches"},
+    "enterprise_pharma_deployment_A": {"total_files": 380, "active_at_snapshot": 34, "promoted": 13, "cull_rate": 0.85},
+    "enterprise_pharma_deployment_B": {"total_files": 37, "notes": "smaller pool, proportionally similar promotion velocity"}
+  },
+  "critic_aria_red": {
+    "critiques_emitted": 234,
+    "verdict_sample_size": 193,
+    "verdict_distribution": {"FLAG": 0.43, "WARNING": 0.42, "PASS": 0.09, "INFO": 0.06},
+    "non_pass_rate_full_sample": 0.85,
+    "non_pass_rate_excluding_info": 0.906,
+    "active_window": ["2026-02-19", "2026-03-29"],
+    "poll_interval_minutes": 30
+  },
+  "self_healing_aria_se": {
+    "debug_events_total": 321,
+    "self_healed": 314,
+    "self_heal_rate": 0.978,
+    "median_recovery_latency_minutes": 8.3,
+    "p95_recovery_latency_minutes": 24.6,
+    "max_recovery_latency_minutes": 65.9,
+    "operator_resolved": 7,
+    "operator_resolved_cluster_dates": ["2026-02-19", "2026-02-22"],
+    "consecutive_zero_operator_weeks": 3,
+    "weeks_5_through_7_autonomous_commits": 5196,
+    "weeks_5_through_7_operator_commits": 0
+  },
+  "operator_cadence_aria_se": {
+    "total_operator_commits": 296,
+    "total_autonomous_commits": 10261,
+    "overall_operator_share_pct": 2.8,
+    "setup_phase_w1_to_w3": {
+      "operator_commits": 287,
+      "autonomous_commits": 2825,
+      "operator_share_pct": 9.2
+    },
+    "mature_phase_w4_to_w7": {
+      "operator_commits": 4,
+      "autonomous_commits": 7090,
+      "operator_share_pct": 0.056,
+      "zero_operator_weeks": 3
+    }
+  },
+  "se_value_normalized": {
+    "completions_per_gpu_hour_all_dispatched": 0.41,
+    "completions_per_gpu_hour_completed_only": 0.65,
+    "completions_per_dollar": 1.69,
+    "validated_hypotheses_per_dollar": 1.07,
+    "validated_hypotheses_per_gpu_hour": 0.26,
+    "intervention_free_days": 25,
+    "active_days": 47,
+    "intervention_free_fraction": 0.532,
+    "sessions_per_operator_commit": 19.9,
+    "gpu_hours_total_dispatched": 356.2,
+    "gpu_hours_completed_only": 227.3
+  },
+  "provenance": {
+    "compiled": "2026-05-16",
+    "sanitization": "Enterprise pharma instance internal names redacted to A / B per repo policy; all per-experiment scientific data excluded; system-metrics released in full.",
+    "source_of_truth": "Verified against live filesystem + git log on 2026-05-14; cross-checked against `~/apps/aria-replay/` outputs on 2026-05-16."
+  }
+}

@@ -1,0 +1,312 @@
+{
+  "a1_no_debug": {
+    "instance": "aria-se",
+    "n_debug": 321,
+    "span_days": 49.7,
+    "active_days": 47,
+    "debug_per_active_day": 6.83,
+    "inter_debug_median_hr": 0.17,
+    "inter_debug_p25_hr": 0.0,
+    "inter_debug_p75_hr": 3.28,
+    "paper_baseline_op_load_min_per_day": 8.6,
+    "op_load_min_per_day_at_5min_per_event": 34.1,
+    "op_load_total_hours_at_5min_per_event": 26.8,
+    "op_load_multiplier_at_5min_per_event": 4.98,
+    "op_load_min_per_day_at_10min_per_event": 68.3,
+    "op_load_total_hours_at_10min_per_event": 53.5,
+    "op_load_multiplier_at_10min_per_event": 8.97,
+    "op_load_min_per_day_at_15min_per_event": 102.4,
+    "op_load_total_hours_at_15min_per_event": 80.2,
+    "op_load_multiplier_at_15min_per_event": 12.95,
+    "debug_max_in_rolling_1hr_window": 17,
+    "debug_max_in_rolling_3hr_window": 17,
+    "debug_max_in_rolling_24hr_window": 34
+  },
+  "a2_no_critic": {
+    "producer": "aria-se",
+    "critic": "aria-red",
+    "producer_total_commits": 10557,
+    "critic_total_commits": 11,
+    "critic_artifacts_emitted": 234,
+    "producer_critique_commits": 608,
+    "producer_critique_share": 0.0576,
+    "producer_post_ablation_commits": 9949,
+    "paper_claimed_sha": "f49ddf5",
+    "paper_claimed_sha_found_in_corpus": false,
+    "actual_integration_commits": [
+      {
+        "sha": "ecdbd8cff1",
+        "ts": "2026-02-21",
+        "subject": "Add ARIA-Red feedback integration to session startup"
+      },
+      {
+        "sha": "49186d2a90",
+        "ts": "2026-02-21",
+        "subject": "Inject ARIA-Red QC feedback into ARIA prompt builder"
+      }
+    ],
+    "actual_template_refactor_commits": [
+      {
+        "sha": "6797bc6d1e",
+        "ts": "2026-03-03",
+        "subject": "ARIA-SE session-4140 [BUILD] Add result_quality_gate to 11 templates"
+      }
+    ],
+    "verbs_before_top5": {
+      "RUN": 4791,
+      "ANALYZE": 1454,
+      "DESIGN": 850,
+      "CRITIQUE": 608,
+      "HYPOTHESIZE": 337
+    }
+  },
+  "a3_no_local_filter": {
+    "n_pool_entries": 873,
+    "n_dispatches_actual": 900,
+    "n_unique_experiments_actual": 213,
+    "n_completed_actual": 147,
+    "n_failed_actual": 364,
+    "n_cancelled_actual": 344,
+    "completion_rate_actual": 0.163,
+    "cost_actual_usd": 86.92,
+    "cost_per_dispatch_actual_usd": 0.0966,
+    "promote_rate_actual": 0.244,
+    "retries_per_promoted_experiment": 4.23,
+    "counterfactual_cost_low_usd": 84.31,
+    "counterfactual_cost_mid_usd": 356.24,
+    "counterfactual_cost_high_usd": 534.36,
+    "counterfactual_cost_mid_multiplier": 4.1,
+    "counterfactual_yield_mid_optimistic": 602,
+    "counterfactual_yield_mid_realistic": 295,
+    "counterfactual_yield_mid_pessimistic": 184,
+    "actual_yield_completed": 147,
+    "actual_yield_per_dollar": 1.691,
+    "counterfactual_yield_per_dollar_realistic": 0.828,
+    "yield_per_dollar_degradation_realistic": 2.04
+  },
+  "s6_debug_recovery": {
+    "instance": "aria-se",
+    "n_debug_events": 321,
+    "n_self_healed": 314,
+    "n_operator_resolved": 7,
+    "n_end_of_corpus": 0,
+    "self_heal_rate": 0.9782,
+    "median_recovery_latency_min": 8.33,
+    "p90_recovery_latency_min": 18.49,
+    "p95_recovery_latency_min": 24.6,
+    "p99_recovery_latency_min": 57.45,
+    "max_recovery_latency_min": 65.93,
+    "latency_buckets": {
+      "<15min": 269,
+      "15min-1hr": 43,
+      "1-6hr": 2,
+      "6-24hr": 0,
+      ">24hr": 0
+    },
+    "weekly_recovery": [
+      {
+        "week": 2,
+        "n_debug": 48,
+        "n_recovered": 45,
+        "recovery_rate": 0.938,
+        "median_latency_min": 7.8
+      },
+      {
+        "week": 3,
+        "n_debug": 67,
+        "n_recovered": 63,
+        "recovery_rate": 0.94,
+        "median_latency_min": 6.3
+      },
+      {
+        "week": 4,
+        "n_debug": 93,
+        "n_recovered": 93,
+        "recovery_rate": 1.0,
+        "median_latency_min": 9.4
+      },
+      {
+        "week": 5,
+        "n_debug": 14,
+        "n_recovered": 14,
+        "recovery_rate": 1.0,
+        "median_latency_min": 9.4
+      },
+      {
+        "week": 6,
+        "n_debug": 37,
+        "n_recovered": 37,
+        "recovery_rate": 1.0,
+        "median_latency_min": 8.3
+      },
+      {
+        "week": 7,
+        "n_debug": 43,
+        "n_recovered": 43,
+        "recovery_rate": 1.0,
+        "median_latency_min": 8.0
+      },
+      {
+        "week": 8,
+        "n_debug": 19,
+        "n_recovered": 19,
+        "recovery_rate": 1.0,
+        "median_latency_min": 10.1
+      }
+    ],
+    "operator_resolved_cases": [
+      {
+        "debug_sha": "<sha>",
+        "debug_ts": "2026-02-19 15:45:29+00:00",
+        "debug_session": 2004,
+        "operator_sha": "<sha>",
+        "operator_subject": "<sanitized>"
+      },
+      {
+        "debug_sha": "<sha>",
+        "debug_ts": "2026-02-19 15:45:38+00:00",
+        "debug_session": 2003,
+        "operator_sha": "<sha>",
+        "operator_subject": "<sanitized>"
+      },
+      {
+        "debug_sha": "<sha>",
+        "debug_ts": "2026-02-19 20:22:26+00:00",
+        "debug_session": 2033,
+        "operator_sha": "<sha>",
+        "operator_subject": "<sanitized>"
+      },
+      {
+        "debug_sha": "<sha>",
+        "debug_ts": "2026-02-20 05:11:26+00:00",
+        "debug_session": 2093,
+        "operator_sha": "<sha>",
+        "operator_subject": "<sanitized>"
+      },
+      {
+        "debug_sha": "<sha>",
+        "debug_ts": "2026-02-21 16:33:04+00:00",
+        "debug_session": 2403,
+        "operator_sha": "<sha>",
+        "operator_subject": "<sanitized>"
+      },
+      {
+        "debug_sha": "<sha>",
+        "debug_ts": "2026-02-21 16:33:10+00:00",
+        "debug_session": 2402,
+        "operator_sha": "<sha>",
+        "operator_subject": "<sanitized>"
+      },
+      {
+        "debug_sha": "<sha>",
+        "debug_ts": "2026-02-22 00:08:46+00:00",
+        "debug_session": 2509,
+        "operator_sha": "<sha>",
+        "operator_subject": "<sanitized>"
+      }
+    ],
+    "next_autonomous_verb_after_debug": {
+      "RUN": 119,
+      "ANALYZE": 59,
+      "CRITIQUE": 36,
+      "DESIGN": 25,
+      "HYPOTHESIZE": 21,
+      "SYNTHESIZE": 16,
+      "SURVEY": 12,
+      "BUILD": 10,
+      "BRIEF": 7,
+      "SCOUT": 5,
+      "ADVISE": 4
+    }
+  },
+  "s4_operator_time": {
+    "instance": "aria-se",
+    "total_operator_commits": 296,
+    "total_autonomous_commits": 10261,
+    "overall_operator_share_pct": 2.8,
+    "setup_phase_weeks_1_3": {
+      "operator_commits": 287,
+      "autonomous_commits": 2825,
+      "operator_share_pct": 9.22,
+      "operator_active_days": 16
+    },
+    "mature_phase_weeks_4_7": {
+      "operator_commits": 4,
+      "autonomous_commits": 7090,
+      "operator_share_pct": 0.056,
+      "operator_active_days": 4,
+      "consecutive_zero_operator_weeks": 3
+    },
+    "closeout_phase_week_8": {
+      "operator_commits": 5,
+      "autonomous_commits": 346,
+      "operator_active_days": 2
+    },
+    "weekly_table": [
+      {
+        "week": 1,
+        "n_operator_commits": 96,
+        "n_autonomous_commits": 182,
+        "operator_share_pct": 34.5,
+        "operator_active_days": 3,
+        "calendar_days_in_window": 3
+      },
+      {
+        "week": 2,
+        "n_operator_commits": 45,
+        "n_autonomous_commits": 1082,
+        "operator_share_pct": 4.0,
+        "operator_active_days": 7,
+        "calendar_days_in_window": 7
+      },
+      {
+        "week": 3,
+        "n_operator_commits": 146,
+        "n_autonomous_commits": 1561,
+        "operator_share_pct": 8.6,
+        "operator_active_days": 6,
+        "calendar_days_in_window": 7
+      },
+      {
+        "week": 4,
+        "n_operator_commits": 4,
+        "n_autonomous_commits": 1894,
+        "operator_share_pct": 0.2,
+        "operator_active_days": 4,
+        "calendar_days_in_window": 7
+      },
+      {
+        "week": 5,
+        "n_operator_commits": 0,
+        "n_autonomous_commits": 1676,
+        "operator_share_pct": 0.0,
+        "operator_active_days": 0,
+        "calendar_days_in_window": 7
+      },
+      {
+        "week": 6,
+        "n_operator_commits": 0,
+        "n_autonomous_commits": 1702,
+        "operator_share_pct": 0.0,
+        "operator_active_days": 0,
+        "calendar_days_in_window": 7
+      },
+      {
+        "week": 7,
+        "n_operator_commits": 0,
+        "n_autonomous_commits": 1818,
+        "operator_share_pct": 0.0,
+        "operator_active_days": 0,
+        "calendar_days_in_window": 7
+      },
+      {
+        "week": 8,
+        "n_operator_commits": 5,
+        "n_autonomous_commits": 346,
+        "operator_share_pct": 1.4,
+        "operator_active_days": 2,
+        "calendar_days_in_window": 2
+      }
+    ]
+  }
+}

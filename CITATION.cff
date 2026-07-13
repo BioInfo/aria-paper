@@ -1,0 +1,45 @@
+cff-version: 1.2.0
+title: "Sustained Autonomous Research Agents in Biomedicine: ARIA, an 18-Week Multi-Domain Deployment, and a Cross-Platform Retinal Biomarker Result"
+message: >-
+  If you use this software or reference the ARIA architecture in
+  academic work, please cite the preprint below.
+type: software
+authors:
+  - given-names: Justin H.
+    family-names: Johnson
+  - given-names: Nicholas
+    family-names: Bedworth
+abstract: >-
+  ARIA is a multi-agent research flywheel for multi-month autonomous
+  scientific discovery. It combines a weighted-pool idea queue, an
+  adversarial cross-model critique layer that runs autonomously
+  against producer output, a hybrid local-then-cloud compute path,
+  and a DEBUG-driven self-healing mechanism. Across an 18-week
+  operational deployment of seven instances over four scientific
+  domains, the architecture produced 19,364 commits, roughly 17,800
+  autonomous sessions, and 1,028 inter-agent artifacts. The longest
+  instance operated continuously for 50 days and self-healed 97.8%
+  of its own operational failures (median recovery 8.3 minutes)
+  without operator intervention.
+keywords:
+  - autonomous research agents
+  - multi-agent systems
+  - LLM orchestration
+  - flywheel architecture
+  - self-healing
+  - long-horizon agents
+  - cross-model critique
+license: Apache-2.0
+url: "https://github.com/BioInfo/aria-paper"
+repository-code: "https://github.com/BioInfo/aria-paper"
+preferred-citation:
+  type: article
+  title: "Sustained Autonomous Research Agents in Biomedicine: ARIA, an 18-Week Multi-Domain Deployment, and a Cross-Platform Retinal Biomarker Result"
+  authors:
+    - given-names: Justin H.
+      family-names: Johnson
+    - given-names: Nick
+      family-names: Bedworth
+  year: 2026
+  journal: "bioRxiv preprint"
+  url: "https://www.biorxiv.org/PENDING"

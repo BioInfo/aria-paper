@@ -1,0 +1,115 @@
+{
+  "_description": "Verb-cardinality and per-verb counts for each deployed instance. Source for Figure 4 (verb compression) in the paper. Universal-5 = DESIGN/RUN/ANALYZE/CRITIQUE/DEBUG.",
+  "instances": {
+    "aria": {
+      "total_verbs": 25,
+      "universal_5_count": 5,
+      "extension_count": 20,
+      "top_verbs": {
+        "ANALYZE": 412,
+        "DESIGN": 287,
+        "RUN": 264,
+        "HYPOTHESIZE": 198,
+        "SURVEY": 156,
+        "SCOUT": 134,
+        "CRITIQUE": 121,
+        "DEBUG": 89,
+        "SYNTHESIZE": 72,
+        "BRIEF": 61
+      }
+    },
+    "aria-se": {
+      "total_verbs": 24,
+      "universal_5_count": 5,
+      "extension_count": 19,
+      "top_verbs": {
+        "RUN": 4791,
+        "ANALYZE": 1454,
+        "DESIGN": 850,
+        "CRITIQUE": 608,
+        "HYPOTHESIZE": 337,
+        "SYNTHESIZE": 334,
+        "DEBUG": 321,
+        "SCOUT": 311,
+        "BRIEF": 310,
+        "SURVEY": 286,
+        "ADVISE": 259,
+        "BUILD": 180,
+        "REFINE": 56,
+        "GENERATE": 48
+      },
+      "notes": "Heavily execution-weighted. RUN + ANALYZE + DEBUG account for 62% of total commits."
+    },
+    "enterprise_pharma_deployment_A": {
+      "total_verbs": 14,
+      "universal_5_count": 5,
+      "extension_count": 9,
+      "top_verbs": {
+        "ANALYZE": "<redacted_count>",
+        "SURVEY": "<redacted_count>",
+        "SCOUT": "<redacted_count>",
+        "HYPOTHESIZE": "<redacted_count>",
+        "DESIGN": "<redacted_count>"
+      },
+      "notes": "Top-3-verbs (ANALYZE + SURVEY + HYPOTHESIZE) account for ~50% of total. Research-weighted distribution. Per-verb counts redacted per repo policy; relative shares preserved."
+    },
+    "enterprise_pharma_deployment_B": {
+      "total_verbs": 13,
+      "universal_5_count": 5,
+      "extension_count": 8,
+      "top_verbs": {
+        "ANALYZE": "<redacted_count>",
+        "SCOUT": "<redacted_count>",
+        "DESIGN": "<redacted_count>",
+        "SURVEY": "<redacted_count>"
+      },
+      "notes": "Top-3-verbs account for ~37% of total. Most compressed verb vocabulary of the four producer instances. Per-verb counts redacted per repo policy."
+    },
+    "aria-red": {
+      "total_verbs": 3,
+      "universal_5_count": 1,
+      "extension_count": 2,
+      "top_verbs": {
+        "CRITIQUE": 234,
+        "DIGEST": 4,
+        "DEBUG": 1
+      },
+      "notes": "Critic instance. Single-purpose verb distribution by design."
+    },
+    "aria-pub": {
+      "total_verbs": 4,
+      "universal_5_count": 1,
+      "extension_count": 3,
+      "top_verbs": {
+        "PROMOTE": 149,
+        "BRIEF": 12,
+        "DEBUG": 3,
+        "REFINE": 1
+      },
+      "notes": "Publisher instance. PROMOTE-dominated."
+    },
+    "aria-forge": {
+      "total_verbs": 6,
+      "universal_5_count": 5,
+      "extension_count": 1,
+      "top_verbs": {
+        "RUN": 18,
+        "ANALYZE": 9,
+        "DESIGN": 6,
+        "DEBUG": 4,
+        "CRITIQUE": 3,
+        "PACKAGE": 1
+      }
+    }
+  },
+  "compression_summary": [
+    {"instance": "aria", "verbs": 25, "phase": "exploratory"},
+    {"instance": "aria-se", "verbs": 24, "phase": "production execution"},
+    {"instance": "enterprise_pharma_deployment_A", "verbs": 14, "phase": "compressed research"},
+    {"instance": "enterprise_pharma_deployment_B", "verbs": 13, "phase": "compressed research"}
+  ],
+  "provenance": {
+    "compiled": "2026-05-16",
+    "sanitization": "Enterprise pharma per-verb counts redacted to category labels; aria, aria-se, aria-red, aria-pub, aria-forge counts released in full."
+  }
+}
