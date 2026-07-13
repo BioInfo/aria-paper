@@ -39,7 +39,8 @@ preferred-citation:
   authors:
     - given-names: Justin H.
       family-names: Johnson
-    - given-names: Nick
+      orcid: "https://orcid.org/0000-0001-7248-7784"
+    - given-names: Nicholas
       family-names: Bedworth
   year: 2026
   journal: "bioRxiv preprint"
