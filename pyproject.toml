@@ -44,7 +44,7 @@ dev = [
 
 [project.urls]
 Homepage = "https://github.com/BioInfo/aria-paper"
-Paper = "https://www.biorxiv.org"
+Paper = "https://doi.org/10.5281/zenodo.21383332"
 Issues = "https://github.com/BioInfo/aria-paper/issues"
 
 [build-system]

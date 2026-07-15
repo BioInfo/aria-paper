@@ -8,8 +8,10 @@ authors:
   - given-names: Justin H.
     family-names: Johnson
     orcid: "https://orcid.org/0000-0001-7248-7784"
+    affiliation: "J&S Group LLC"
   - given-names: Nicholas
     family-names: Bedworth
+    affiliation: "SocialEyes Corporation"
 abstract: >-
   ARIA is a multi-agent research flywheel for multi-month autonomous
   scientific discovery. It combines a weighted-pool idea queue, an
@@ -31,6 +33,14 @@ keywords:
   - long-horizon agents
   - cross-model critique
 license: Apache-2.0
+doi: "10.5281/zenodo.21383331"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21383331"
+    description: "Concept DOI (resolves to the latest version)"
+  - type: doi
+    value: "10.5281/zenodo.21383332"
+    description: "Version 1.0 (this release)"
 url: "https://github.com/BioInfo/aria-paper"
 repository-code: "https://github.com/BioInfo/aria-paper"
 preferred-citation:
@@ -43,5 +53,8 @@ preferred-citation:
     - given-names: Nicholas
       family-names: Bedworth
   year: 2026
-  journal: "bioRxiv preprint"
-  url: "https://www.biorxiv.org/PENDING"
+  month: 7
+  doi: "10.5281/zenodo.21383332"
+  url: "https://doi.org/10.5281/zenodo.21383332"
+  publisher:
+    name: "Zenodo"

@@ -8,12 +8,12 @@
 
 **A multi-agent research flywheel for multi-month autonomous scientific discovery.**
 
-Paper companion code for the bioRxiv preprint:
+Paper companion code for the preprint:
 *"Sustained Autonomous Research Agents in Biomedicine: ARIA, an 18-Week Multi-Domain Deployment, and a Cross-Platform Retinal Biomarker Result"*
-(Johnson & Bedworth, 2026).
+(Johnson & Bedworth, 2026). DOI: [10.5281/zenodo.21383332](https://doi.org/10.5281/zenodo.21383332).
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg?style=flat-square)](LICENSE)
-[![bioRxiv](https://img.shields.io/badge/bioRxiv-PENDING-b31b1b.svg?style=flat-square)](https://www.biorxiv.org)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21383331.svg)](https://doi.org/10.5281/zenodo.21383331)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg?style=flat-square&logo=python&logoColor=white)](https://www.python.org/downloads/)
 [![Code style: ruff](https://img.shields.io/badge/code_style-ruff-000.svg?style=flat-square)](https://github.com/astral-sh/ruff)
 [![CITATION.cff](https://img.shields.io/badge/cite_this-CITATION.cff-blueviolet.svg?style=flat-square)](CITATION.cff)
@@ -131,7 +131,7 @@ If you reference ARIA in academic work, please use the BibTeX in [`CITATION.cff`
 ```
 Johnson, J. H., & Bedworth, N. (2026).
 Sustained Autonomous Research Agents in Biomedicine: ARIA, an 18-Week Multi-Domain Deployment, and a Cross-Platform Retinal Biomarker Result.
-bioRxiv preprint.
+Zenodo. https://doi.org/10.5281/zenodo.21383332
 ```
 
 ## Contributing
